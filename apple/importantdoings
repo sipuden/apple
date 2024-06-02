@@ -1,0 +1,48 @@
+/In CSS, the position: absolute; declaration is used to position an element relative to its closest positioned ancestor. When you apply position: absolute; to an element, it's removed from the normal document flow, meaning it doesn't affect the position of other elements.
+/In CSS, the font-weight property specifies the weight or thickness of a font. The value 400 is a numerical representation of the font weight
+/When you specify bottom 20% in CSS, you are positioning an element relative to the bottom edge of its containing block.
+
+Here's what bottom 20% means:
+
+The element will be positioned a distance of 20% of the height of its containing block from the bottom edge of the containing block.
+It's important to understand that bottom is used in conjunction with the position: absolute; or position: fixed; property. This combination allows you to position an element based on its distance from the bottom edge of its containing block, rather than its default position within the document flow.
+//The CSS transform property is used to apply transformations such as scaling, rotating, skewing, or translating (moving) an element.
+
+When you use transform: translateX(-50%);, you are translating the element along the horizontal axis (X-axis) by a percentage of its own width, but in the opposite direction. Specifically, -50% means you are translating the element leftwards by half of its own width.
+
+Here's a breakdown:
+
+translateX() is a function of the transform property that moves an element along the horizontal axis.
+-50% specifies the amount of translation. Negative values move the element to the left, and positive values move it to the right. Here, -50% moves the element to the left by 50% of its own width.
+This is often used in combination with position: absolute; or position: fixed; to center an element horizontally within its containing block. For example:
+
+css
+Copy code
+.centered-element {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+In this example, the left: 50%; initially moves the element so that its left edge is positioned 50% of the width of its containing block from the left edge of the containing block. Then, transform: translateX(-50%); moves it back leftwards by 50% of its own width, effectively centering it horizontally within the containing block.
+///The CSS property white-space controls how white space inside an element is handled. When you set white-space: nowrap;, it means that white space inside the element will not wrap to the next line, and the text or content will display on a single line, regardless of the available width.
+
+Here's what white-space: nowrap; means:
+
+nowrap: This value prevents the text from wrapping to the next line. It causes the text to overflow the container if it exceeds the available width. This is particularly useful when you want to display text or content in a single line without wrapping, such as in navigation menus, buttons, or banners.
+Example usage:
+
+css
+Copy code
+.container {
+  white-space: nowrap;
+}
+With this CSS rule, the content inside elements with the class .container will be displayed on a single line without wrapping.
+
+It's important to note that white-space: nowrap; applies to all types of content within the element, including text, inline elements, and inline-block elements.
+
+
+
+
+Message ChatGPT…
+
+//
